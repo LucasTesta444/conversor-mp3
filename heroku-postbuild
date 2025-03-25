@@ -11,6 +11,3 @@ cd Back
 npm install
 cd ../..
 echo "Backend dependencies installed."
-
-#!/bin/bash
-chmod +x $0
