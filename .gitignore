@@ -1,0 +1,4 @@
+node_modules/
+/front/conversor/node_modules/
+/front/node_modules/
+/api/.env

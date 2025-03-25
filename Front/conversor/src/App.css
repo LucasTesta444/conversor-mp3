@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+  max-width: 100vw;
+}
+
+body {
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  background-color: transparent;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+.titles {
+  display: flex;
+  flex-direction: column;
+  color: #FFFF;
+  gap: 10px;
+  position: relative;
+  z-index: 10;
+}
+
+.title {
+  gap: 10px;
+  display: flex;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.title > *:first-child {
+  color: #FF0000;
+}
+
+.desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.box-main {
+  width: 33vw;
+  height: 43.5vh;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.particles canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.inputUrl-main {
+  outline: none;
+  border: none;
+  width: 25vw;
+  border-radius: 15px;
+  padding: 20px;
+  font-size: 15px;
+  height: 60px;
+}
+
+.box-format {
+  display: flex;
+  gap: 25px;
+  color: #fff;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.button-convert-main {
+  width: 15vw;
+  height: 6vh;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: none;
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-convert-main:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 10px -2px rgba(255,255,255,0.68);
+  -moz-box-shadow: 0px 0px 10px -2px rgba(255,255,255,0.68);
+  box-shadow: 0px 0px 10px -2px rgba(255,255,255,0.68);
+  color: #FF0000;
+}
+
+.box-input-header, .box-input-main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.desc-url-main {
+  color: #ffffff;
+  margin-left: 5px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+}
+
+.error {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.buttonDownload {
+  width: 12vw;
+  height: 6vh;
+  border-radius: 10px;
+  background-color: #FF0000;
+  border: none;
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.buttonDownload:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 10px -2px rgba(255,255,255,0.68);
+  -moz-box-shadow: 0px 0px 10px -2px rgba(255,255,255,0.68);
+  box-shadow: 0px 0px 10px -2px rgba(255,255,255,0.68);
+}
+
+.convert {
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.download-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top: 3px solid rgb(255, 0, 0);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+}
+
+.button-converter-main {
+  color: #FF0000;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 1600px) {
+  .button-convert-main{
+    font-size: 15px;
+    width: 20vw;
+  }
+}
+
+@media (max-width: 1200px) {
+  .box-main {
+    width: 50%;
+  }
+
+  .button-convert {
+    font-size: 12px;
+  }
+
+  .inputUrl-main {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .button-convert-main {
+    width: 35vw;
+    height: 60px;
+    font-size: 12;
+  }
+
+  .box-main {
+    width: 80%;
+    height: 43.5vh;
+  }
+
+  .title {
+    font-size: 15px;
+  }
+
+  .inputUrl-main {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .inputUrl-main {
+    width: 98%;
+  }
+}

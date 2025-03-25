@@ -1,0 +1,12 @@
+{
+  "name": "conversor-mp3",
+  "version": "1.0.0",
+  "description": "Projeto principal do conversor MP3",
+  "scripts": {
+    "install": "",
+    "heroku-postbuild": "./heroku-postbuild"
+  },
+  "engines": {
+    "node": "22.14.0"
+  }
+}
