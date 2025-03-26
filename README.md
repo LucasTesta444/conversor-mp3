@@ -4,6 +4,8 @@
 
 Este projeto é um conversor web que permite aos usuários converter vídeos do YouTube para o formato MP3 de forma rápida e fácil. Basta inserir a URL do vídeo do YouTube e clicar em converter para obter o link de download do arquivo MP3.
 
+![Image](https://github.com/user-attachments/assets/7962e0dc-6aba-4af0-a582-70348cba04b9)
+
 ## Tecnologias Utilizadas
 
 * **Frontend:**
