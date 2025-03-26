@@ -142,7 +142,7 @@ body {
 }
 
 .buttonDownload {
-  width: 12vw;
+  width: 14.5vw;
   height: 6vh;
   border-radius: 10px;
   background-color: #FF0000;
@@ -188,16 +188,16 @@ body {
   display: inline-block;
 }
 
-.button-converter-main {
-  color: #FF0000;
-}
-
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
 
 @media (max-width: 1600px) {
+  .buttonDownload {
+    width: 16vw;
+  }
+
   .button-convert-main{
     font-size: 15px;
     width: 20vw;
@@ -205,6 +205,10 @@ body {
 }
 
 @media (max-width: 1200px) {
+  .buttonDownload {
+    width: 24vw;
+  }
+  
   .box-main {
     width: 50%;
   }
@@ -219,6 +223,10 @@ body {
 }
 
 @media (max-width: 800px) {
+  .buttonDownload {
+    width: 32vw;
+  }
+
   .button-convert-main {
     width: 35vw;
     height: 60px;
@@ -240,6 +248,10 @@ body {
 }
 
 @media (max-width: 500px) {
+  .buttonDownload {
+    width: 70%;
+  }
+
   .inputUrl-main {
     width: 98%;
   }

@@ -38,7 +38,7 @@ const ConversionForm = ({ onConvert, loading, error, downloadLink }) => {
 
       <div className="button-main">
         <button className="button-convert-main" onClick={handleConvert} disabled={loading}>
-          {loading ? <div className="spinner"></div> : <div className="button-converter-main">Converter</div>}
+          {loading ? <div className="spinner"></div> : <div className="button-convert-main">Converter</div>}
         </button>
         </div>
       </div>
