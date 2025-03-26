@@ -47,7 +47,7 @@ export default async function handler(req, res) {
 }
 
 function extractVideoId(url) {
-  const regex = /(?:https?:\/\/(?:www\.)?youtube\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|\S*?[?&]v=))([a-zA-Z0-9_-]{11})/;
+  const regex = /(?:https?:\/\/)?(?:www\.|m\.|kids\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|watch\?v=|v\/))([a-zA-Z0-9_-]{11})/i;
   const match = url.match(regex);
   return match ? match[1] : null;
 }
