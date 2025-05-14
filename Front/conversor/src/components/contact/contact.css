@@ -122,6 +122,8 @@
   @media (max-width: 1000px) {
     .contact-container {
       width: 50%;
+      overflow-y: scroll;
+      scrollbar-width: thin;
     }
 
     .text-title-contact {
@@ -159,6 +161,11 @@
       padding: 10px;
     }
 
+    .contact-container {
+      overflow-y: scroll;
+      scrollbar-width: thin;
+    }
+
     .contact-container form::-webkit-scrollbar {
       width: 6px;
       border-radius: 20px;
@@ -180,4 +187,3 @@
       display: none;
     }
   }
-  
