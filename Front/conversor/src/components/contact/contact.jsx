@@ -44,7 +44,7 @@ function Contact() {
       <div className="contact-container">
       <div className="text-group-contact">
       <h3 className="text-title-contact">Tem dúvidas ou sugestões?</h3>
-      <a href="https://w.app/fzlyqx" target="_blank" rel="noopener noreferrer" className="text-faleComigo-contact">Fale comigo!</a>
+      <a href="https://wa.me/5535992098429?text=Ol%C3%A1%20Lucas!%20tenho%20algumas%20d%C3%BAvidas%20para%20tirar%20com%20voc%C3%AA%20sobre%20seu%20conversor%20mp3." target="_blank" rel="noopener noreferrer" className="text-faleComigo-contact">Fale comigo!</a>
       </div>
       <form ref={form} onSubmit={sendEmail}>
         <label>Nome</label>

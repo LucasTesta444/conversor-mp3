@@ -84,6 +84,9 @@
     flex-direction: column;
     display: flex;
     text-align: center;
+    gap: 2px;
+    overflow: visible;
+    padding: 10px;
   }
   
   .text-title-contact {
@@ -152,9 +155,24 @@
 
   @media (max-height: 800px) {
     .contact-container form {
-      overflow-y: auto;
+      overflow-y: visible;
       padding: 10px;
     }
+
+    .contact-container form::-webkit-scrollbar {
+      width: 6px;
+      border-radius: 20px;
+  }
+  
+  .contact-container form::-webkit-scrollbar-thumb {
+      background-color: #FF0000;
+      border-radius: 20px;
+  }
+  
+  .contact-container form::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 20px;
+  }
   }
 
   @media (max-height: 600px) {
